@@ -516,7 +516,7 @@
 
         <div class="inventory-section">
             <h3 style="margin-top: 0; display:flex; justify-content:space-between; align-items:center;">
-                <span>🎒 臨時存存储背包</span>
+                <span>🎒 臨時存儲背包</span>
                 <span style="font-size:11px; color:var(--primary); font-weight:normal;">*道具只供提取，不設回收*</span>
             </h3>
             <div class="inventory-grid" id="inventory-grid"></div>
@@ -581,128 +581,127 @@
             karambits: "🔴 紅色爪子刀契合度"
         };
 
-        // 已全部補上「盲盒網頁/」前綴路徑，對應你 GitHub 的真實檔案結構
         const MACHINES = {
             guns: {
                 title: "全系槍械神兵盛典機台", cost: 2, pityLimit: 250,
                 grandPrizes: [
-                    { name: "Glock-18 | Fade", img: "盲盒網頁/images/image (65).png", rarity: "rarity-gold" }
+                    { name: "Glock-18 | Fade", img: "images/image_65.png", rarity: "rarity-gold" }
                 ],
                 redPrizes: [
-                    { name: "AK-47 | Red Baron", img: "盲盒網頁/images/image (27).png", rarity: "rarity-red" },
-                    { name: "M4A1-S | BlackOps", img: "盲盒網頁/images/image (42).png", rarity: "rarity-red" },
-                    { name: "AK-47 | Uniki", img: "盲盒網頁/images/image (21).png", rarity: "rarity-red" },
-                    { name: "AWP | Typhon", img: "盲盒網頁/images/image (75).png", rarity: "rarity-red" },
-                    { name: "AK-47 | Sakura", img: "盲盒網頁/images/image (76).png", rarity: "rarity-red" },
-                    { name: "M4A1-S | Orchids", img: "盲盒網頁/images/image (79).png", rarity: "rarity-red" },
-                    { name: "AK-47 | Luminax", img: "盲盒網頁/images/image (84).png", rarity: "rarity-red" }
+                    { name: "AK-47 | Red Baron", img: "images/image_27.png", rarity: "rarity-red" },
+                    { name: "M4A1-S | BlackOps", img: "images/image_42.png", rarity: "rarity-red" },
+                    { name: "AK-47 | Uniki", img: "images/image_21.png", rarity: "rarity-red" },
+                    { name: "AWP | Typhon", img: "images/image_75.png", rarity: "rarity-red" },
+                    { name: "AK-47 | Sakura", img: "images/image_76.png", rarity: "rarity-red" },
+                    { name: "M4A1-S | Orchids", img: "images/image_79.png", rarity: "rarity-red" },
+                    { name: "AK-47 | Luminax", img: "images/image_84.png", rarity: "rarity-red" }
                 ],
                 pinkPrizes: [
-                    { name: "XM1014 | Lilies", img: "盲盒網頁/images/image (10).png", rarity: "rarity-pink" },
-                    { name: "AUG | Overgrowth", img: "盲盒網頁/images/image (11).png", rarity: "rarity-pink" },
-                    { name: "MAC-10 | Dahila", img: "盲盒網頁/images/image (12).png", rarity: "rarity-pink" },
-                    { name: "SSG 08 | Labyrinth", img: "盲盒網頁/images/image (13).png", rarity: "rarity-pink" },
-                    { name: "Clock-18 | Broken TV", img: "盲盒網頁/images/image (25).png", rarity: "rarity-pink" },
-                    { name: "P90 | Database", img: "盲盒網頁/images/image (26).png", rarity: "rarity-pink" },
-                    { name: "FAMAS | Medic", img: "盲盒網頁/images/image (28).png", rarity: "rarity-pink" },
-                    { name: "M4A4 | BubblePop", img: "盲盒網頁/images/image (68).png", rarity: "rarity-pink" },
-                    { name: "AWP | Railgun", img: "盲盒網頁/images/image (72).png", rarity: "rarity-pink" },
-                    { name: "M4A1-S | Retro", img: "盲盒網頁/images/image (77).png", rarity: "rarity-pink" },
-                    { name: "M4A4 | B-Hop", img: "盲盒網頁/images/image (78).png", rarity: "rarity-pink" },
-                    { name: "M4A1-S | Phaseprint", img: "盲盒網頁/images/image (80).png", rarity: "rarity-pink" }
+                    { name: "XM1014 | Lilies", img: "images/image_10.png", rarity: "rarity-pink" },
+                    { name: "AUG | Overgrowth", img: "images/image_11.png", rarity: "rarity-pink" },
+                    { name: "MAC-10 | Dahila", img: "images/image_12.png", rarity: "rarity-pink" },
+                    { name: "SSG 08 | Labyrinth", img: "images/image_13.png", rarity: "rarity-pink" },
+                    { name: "Clock-18 | Broken TV", img: "images/image_25.png", rarity: "rarity-pink" },
+                    { name: "P90 | Database", img: "images/image_26.png", rarity: "rarity-pink" },
+                    { name: "FAMAS | Medic", img: "images/image_28.png", rarity: "rarity-pink" },
+                    { name: "M4A4 | BubblePop", img: "images/image_68.png", rarity: "rarity-pink" },
+                    { name: "AWP | Railgun", img: "images/image_72.png", rarity: "rarity-pink" },
+                    { name: "M4A1-S | Retro", img: "images/image_77.png", rarity: "rarity-pink" },
+                    { name: "M4A4 | B-Hop", img: "images/image_78.png", rarity: "rarity-pink" },
+                    { name: "M4A1-S | Phaseprint", img: "images/image_80.png", rarity: "rarity-pink" }
                 ],
                 purplePrizes: [
-                    { name: "AUG | Tension", img: "盲盒網頁/images/image (20).png", rarity: "rarity-purple" },
-                    { name: "MP9 | Paranoia", img: "盲盒網頁/images/image (22).png", rarity: "rarity-purple" },
-                    { name: "XM1014 | Koi", img: "盲盒網頁/images/image (23).png", rarity: "rarity-purple" },
-                    { name: "MP9 | Canyon", img: "盲盒網頁/images/image (24).png", rarity: "rarity-purple" },
-                    { name: "Five-SeveN | Control", img: "盲盒網頁/images/image (37).png", rarity: "rarity-purple" },
-                    { name: "USP-S | Heated", img: "盲盒網頁/images/image (41).png", rarity: "rarity-purple" },
-                    { name: "Five-SeveN | X-Ray", img: "盲盒網頁/images/image (50).png", rarity: "rarity-purple" },
-                    { name: "Desert Eagle | Paranoia", img: "盲盒網頁/images/image (51).png", rarity: "rarity-purple" },
-                    { name: "Dual Berettas | Tension", img: "盲盒網頁/images/image (52).png", rarity: "rarity-purple" },
-                    { name: "P250 | Mindspill", img: "盲盒網頁/images/image (53).png", rarity: "rarity-purple" },
-                    { name: "USP-S | Ajax", img: "盲盒網頁/images/image (54).png", rarity: "rarity-purple" },
-                    { name: "Dual Berettas | Gilded", img: "盲盒網頁/images/image (55).png", rarity: "rarity-purple" },
-                    { name: "P90 | Synthwave", img: "盲盒網頁/images/image (56).png", rarity: "rarity-purple" },
-                    { name: "Desert Eagle | Circuit", img: "盲盒網頁/images/image (57).png", rarity: "rarity-purple" },
-                    { name: "P250 | Zen", img: "盲盒網頁/images/image (58).png", rarity: "rarity-purple" },
-                    { name: "MAC-10 | Nailgun", img: "盲盒網頁/images/image (59).png", rarity: "rarity-purple" },
-                    { name: "Desert Eagle | Velocity", img: "盲盒網頁/images/image (60).png", rarity: "rarity-purple" },
-                    { name: "MP9 | Graffiti", img: "盲盒網頁/images/image (61).png", rarity: "rarity-purple" },
-                    { name: "Sawed-Off | Improvised", img: "盲盒網頁/images/image (62).png", rarity: "rarity-purple" },
-                    { name: "Desert Eagle | Meicy", img: "盲盒網頁/images/image (66).png", rarity: "rarity-purple" },
-                    { name: "Glock-18 | Fuji", img: "盲盒網頁/images/image (67).png", rarity: "rarity-purple" },
-                    { name: "Galil AR | Monochrome", img: "盲盒網頁/images/image (69).png", rarity: "rarity-purple" },
-                    { name: "SSG 08 | Mindpill", img: "盲盒網頁/images/image (70).png", rarity: "rarity-purple" },
-                    { name: "P90 | Chromatic", img: "盲盒網頁/images/image (71).png", rarity: "rarity-purple" }
+                    { name: "AUG | Tension", img: "images/image_20.png", rarity: "rarity-purple" },
+                    { name: "MP9 | Paranoia", img: "images/image_22.png", rarity: "rarity-purple" },
+                    { name: "XM1014 | Koi", img: "images/image_23.png", rarity: "rarity-purple" },
+                    { name: "MP9 | Canyon", img: "images/image_24.png", rarity: "rarity-purple" },
+                    { name: "Five-SeveN | Control", img: "images/image_37.png", rarity: "rarity-purple" },
+                    { name: "USP-S | Heated", img: "images/image_41.png", rarity: "rarity-purple" },
+                    { name: "Five-SeveN | X-Ray", img: "images/image_50.png", rarity: "rarity-purple" },
+                    { name: "Desert Eagle | Paranoia", img: "images/image_51.png", rarity: "rarity-purple" },
+                    { name: "Dual Berettas | Tension", img: "images/image_52.png", rarity: "rarity-purple" },
+                    { name: "P250 | Mindspill", img: "images/image_53.png", rarity: "rarity-purple" },
+                    { name: "USP-S | Ajax", img: "images/image_54.png", rarity: "rarity-purple" },
+                    { name: "Dual Berettas | Gilded", img: "images/image_55.png", rarity: "rarity-purple" },
+                    { name: "P90 | Synthwave", img: "images/image_56.png", rarity: "rarity-purple" },
+                    { name: "Desert Eagle | Circuit", img: "images/image_57.png", rarity: "rarity-purple" },
+                    { name: "P250 | Zen", img: "images/image_58.png", rarity: "rarity-purple" },
+                    { name: "MAC-10 | Nailgun", img: "images/image_59.png", rarity: "rarity-purple" },
+                    { name: "Desert Eagle | Velocity", img: "images/image_60.png", rarity: "rarity-purple" },
+                    { name: "MP9 | Graffiti", img: "images/image_61.png", rarity: "rarity-purple" },
+                    { name: "Sawed-Off | Improvised", img: "images/image_62.png", rarity: "rarity-purple" },
+                    { name: "Desert Eagle | Meicy", img: "images/image_66.png", rarity: "rarity-purple" },
+                    { name: "Glock-18 | Fuji", img: "images/image_67.png", rarity: "rarity-purple" },
+                    { name: "Galil AR | Monochrome", img: "images/image_69.png", rarity: "rarity-purple" },
+                    { name: "SSG 08 | Mindpill", img: "images/image_70.png", rarity: "rarity-purple" },
+                    { name: "P90 | Chromatic", img: "images/image_71.png", rarity: "rarity-purple" }
                 ],
                 bluePrizes: [
-                    { name: "FAMAS | Arctic Camo", img: "盲盒網頁/images/image (1).png", rarity: "rarity-blue" },
-                    { name: "SSG 08 | Desert Strike", img: "盲盒網頁/images/image (2).png", rarity: "rarity-blue" },
-                    { name: "Nova | Heat", img: "盲盒網頁/images/image (3).png", rarity: "rarity-blue" },
-                    { name: "P90 | BigCat", img: "盲盒網頁/images/image (4).png", rarity: "rarity-blue" },
-                    { name: "Galil AR | Irradiated", img: "盲盒網頁/images/image (5).png", rarity: "rarity-blue" },
-                    { name: "XM1014 | Abstract", img: "盲盒網頁/images/image (6).png", rarity: "rarity-blue" },
-                    { name: "Nova | Flutter", img: "盲盒網頁/images/image (7).png", rarity: "rarity-blue" },
-                    { name: "Negev | Noctiflora", img: "盲盒網頁/images/image (8).png", rarity: "rarity-blue" },
-                    { name: "Tec-9 | Monarch", img: "盲盒網頁/images/image (9).png", rarity: "rarity-blue" },
-                    { name: "Dual Berettas | Vernal", img: "盲盒網頁/images/image (14).png", rarity: "rarity-blue" },
-                    { name: "Negev | The Jungle", img: "盲盒網頁/images/image (15).png", rarity: "rarity-blue" },
-                    { name: "Nova | Slime", img: "盲盒網頁/images/image (16).png", rarity: "rarity-blue" },
-                    { name: "P250 | Frutiger Aero", img: "盲盒網頁/images/image (17).png", rarity: "rarity-blue" },
-                    { name: "USP-S | SpecOps", img: "盲盒網頁/images/image (18).png", rarity: "rarity-blue" },
-                    { name: "Desert Eagle | Turbo", img: "盲盒網頁/images/image (19).png", rarity: "rarity-blue" },
-                    { name: "MAC-10 | Ivory", img: "盲盒網頁/images/image (29).png", rarity: "rarity-blue" },
-                    { name: "XM1014 | Splatter", img: "盲盒網頁/images/image (30).png", rarity: "rarity-blue" },
-                    { name: "AUG | Predator", img: "盲盒網頁/images/image (31).png", rarity: "rarity-blue" },
-                    { name: "MAG-7 | Vision", img: "盲盒網頁/images/image (32).png", rarity: "rarity-blue" },
-                    { name: "Nova | Half-One", img: "盲盒網頁/images/image (33).png", rarity: "rarity-blue" },
-                    { name: "Negev | Rotary Power", img: "盲盒網頁/images/image (34).png", rarity: "rarity-blue" },
-                    { name: "Tec-9 | Vice", img: "盲盒網頁/images/image (35).png", rarity: "rarity-blue" },
-                    { name: "Sawed-Off | Panthers", img: "盲盒網頁/images/image (36).png", rarity: "rarity-blue" },
-                    { name: "FAMAS | Wallpaper", img: "盲盒網頁/images/image (38).png", rarity: "rarity-blue" },
-                    { name: "R8 Revolver | Bloody", img: "盲盒網頁/images/image (39).png", rarity: "rarity-blue" },
-                    { name: "Galil AR | Feral", img: "盲盒網頁/images/image (40).png", rarity: "rarity-blue" },
-                    { name: "Tec-9 | Striker", img: "盲盒網頁/images/image (43).png", rarity: "rarity-blue" },
-                    { name: "P250 | Pulse", img: "盲盒網頁/images/image (44).png", rarity: "rarity-blue" },
-                    { name: "AUG | Hot Rod", img: "盲盒網頁/images/image (45).png", rarity: "rarity-blue" },
-                    { name: "P250 | X-250", img: "盲盒網頁/images/image (46).png", rarity: "rarity-blue" },
-                    { name: "SG 553 | Dynasty", img: "盲盒網頁/images/image (47).png", rarity: "rarity-blue" },
-                    { name: "Tec-9 | Timeless", img: "盲盒網頁/images/image (48).png", rarity: "rarity-blue" },
-                    { name: "XM1014 | Office", img: "盲盒網頁/images/image (49).png", rarity: "rarity-blue" },
-                    { name: "Dual Berettas | Inked", img: "盲盒網頁/images/image (63).png", rarity: "rarity-blue" },
-                    { name: "Zeus x27 | Overcharge", img: "盲盒網頁/images/image (64).png", rarity: "rarity-blue" },
-                    { name: "MP9 | Choke Oil", img: "盲盒網頁/images/image (73).png", rarity: "rarity-blue" },
-                    { name: "SSG 08 | Onyx", img: "盲盒網頁/images/image (74).png", rarity: "rarity-blue" },
-                    { name: "Galil AR | Irid", img: "盲盒網頁/images/image (81).png", rarity: "rarity-blue" },
-                    { name: "AWP | Bird Hunt", img: "盲盒網頁/images/image (82).png", rarity: "rarity-blue" },
-                    { name: "FAMAS | Mind", img: "盲盒網頁/images/image (83).png", rarity: "rarity-blue" }
+                    { name: "FAMAS | Arctic Camo", img: "images/image_1.png", rarity: "rarity-blue" },
+                    { name: "SSG 08 | Desert Strike", img: "images/image_2.png", rarity: "rarity-blue" },
+                    { name: "Nova | Heat", img: "images/image_3.png", rarity: "rarity-blue" },
+                    { name: "P90 | BigCat", img: "images/image_4.png", rarity: "rarity-blue" },
+                    { name: "Galil AR | Irradiated", img: "images/image_5.png", rarity: "rarity-blue" },
+                    { name: "XM1014 | Abstract", img: "images/image_6.png", rarity: "rarity-blue" },
+                    { name: "Nova | Flutter", img: "images/image_7.png", rarity: "rarity-blue" },
+                    { name: "Negev | Noctiflora", img: "images/image_8.png", rarity: "rarity-blue" },
+                    { name: "Tec-9 | Monarch", img: "images/image_9.png", rarity: "rarity-blue" },
+                    { name: "Dual Berettas | Vernal", img: "images/image_14.png", rarity: "rarity-blue" },
+                    { name: "Negev | The Jungle", img: "images/image_15.png", rarity: "rarity-blue" },
+                    { name: "Nova | Slime", img: "images/image_16.png", rarity: "rarity-blue" },
+                    { name: "P250 | Frutiger Aero", img: "images/image_17.png", rarity: "rarity-blue" },
+                    { name: "USP-S | SpecOps", img: "images/image_18.png", rarity: "rarity-blue" },
+                    { name: "Desert Eagle | Turbo", img: "images/image_19.png", rarity: "rarity-blue" },
+                    { name: "MAC-10 | Ivory", img: "images/image_29.png", rarity: "rarity-blue" },
+                    { name: "XM1014 | Splatter", img: "images/image_30.png", rarity: "rarity-blue" },
+                    { name: "AUG | Predator", img: "images/image_31.png", rarity: "rarity-blue" },
+                    { name: "MAG-7 | Vision", img: "images/image_32.png", rarity: "rarity-blue" },
+                    { name: "Nova | Half-One", img: "images/image_33.png", rarity: "rarity-blue" },
+                    { name: "Negev | Rotary Power", img: "images/image_34.png", rarity: "rarity-blue" },
+                    { name: "Tec-9 | Vice", img: "images/image_35.png", rarity: "rarity-blue" },
+                    { name: "Sawed-Off | Panthers", img: "images/image_36.png", rarity: "rarity-blue" },
+                    { name: "FAMAS | Wallpaper", img: "images/image_38.png", rarity: "rarity-blue" },
+                    { name: "R8 Revolver | Bloody", img: "images/image_39.png", rarity: "rarity-blue" },
+                    { name: "Galil AR | Feral", img: "images/image_40.png", rarity: "rarity-blue" },
+                    { name: "Tec-9 | Striker", img: "images/image_43.png", rarity: "rarity-blue" },
+                    { name: "P250 | Pulse", img: "images/image_44.png", rarity: "rarity-blue" },
+                    { name: "AUG | Hot Rod", img: "images/image_45.png", rarity: "rarity-blue" },
+                    { name: "P250 | X-250", img: "images/image_46.png", rarity: "rarity-blue" },
+                    { name: "SG 553 | Dynasty", img: "images/image_47.png", rarity: "rarity-blue" },
+                    { name: "Tec-9 | Timeless", img: "images/image_48.png", rarity: "rarity-blue" },
+                    { name: "XM1014 | Office", img: "images/image_49.png", rarity: "rarity-blue" },
+                    { name: "Dual Berettas | Inked", img: "images/image_63.png", rarity: "rarity-blue" },
+                    { name: "Zeus x27 | Overcharge", img: "images/image_64.png", rarity: "rarity-blue" },
+                    { name: "MP9 | Choke Oil", img: "images/image_73.png", rarity: "rarity-blue" },
+                    { name: "SSG 08 | Onyx", img: "images/image_74.png", rarity: "rarity-blue" },
+                    { name: "Galil AR | Irid", img: "images/image_81.png", rarity: "rarity-blue" },
+                    { name: "AWP | Bird Hunt", img: "images/image_82.png", rarity: "rarity-blue" },
+                    { name: "FAMAS | Mind", img: "images/image_83.png", rarity: "rarity-blue" }
                 ]
             },
             pink_purple: {
                 title: "🌸 猛男粉紫專區機台", cost: 3, pityLimit: 400,
-                grandPrizes: [{ name: "M4A4 | BubblePop", img: "盲盒網頁/images/image (68).png", rarity: "rarity-gold" }],
-                redPrizes: [{ name: "AK-47 | Sakura", img: "盲盒網頁/images/image (76).png", rarity: "rarity-red" }],
-                pinkPrizes: [{ name: "Clock-18 | Broken TV", img: "盲盒網頁/images/image (25).png", rarity: "rarity-pink" }],
-                purplePrizes: [{ name: "Glock-18 | Fuji", img: "盲盒網頁/images/image (67).png", rarity: "rarity-purple" }],
-                bluePrizes: [{ name: "Tec-9 | Vice", img: "盲盒網頁/images/image (35).png", rarity: "rarity-blue" }]
+                grandPrizes: [{ name: "M4A4 | BubblePop", img: "images/image_68.png", rarity: "rarity-gold" }],
+                redPrizes: [{ name: "AK-47 | Sakura", img: "images/image_76.png", rarity: "rarity-red" }],
+                pinkPrizes: [{ name: "Clock-18 | Broken TV", img: "images/image_25.png", rarity: "rarity-pink" }],
+                purplePrizes: [{ name: "Glock-18 | Fuji", img: "images/image_67.png", rarity: "rarity-purple" }],
+                bluePrizes: [{ name: "Tec-9 | Vice", img: "images/image_35.png", rarity: "rarity-blue" }]
             },
             swords: {
                 title: "⚔️ 關刀與神針機台", cost: 40, pityLimit: 3000,
-                grandPrizes: [{ name: "★ 絕版金槍神兵", img: "盲盒網頁/images/image (65).png", rarity: "rarity-gold" }],
-                redPrizes: [{ name: "M4A1-S | Orchids", img: "盲盒網頁/images/image (79).png", rarity: "rarity-red" }],
-                pinkPrizes: [{ name: "AWP | Railgun", img: "盲盒網頁/images/image (72).png", rarity: "rarity-pink" }],
-                purplePrizes: [{ name: "SSG 08 | Mindpill", img: "盲盒網頁/images/image (70).png", rarity: "rarity-purple" }],
-                bluePrizes: [{ name: "SSG 08 | Onyx", img: "盲盒網頁/images/image (74).png", rarity: "rarity-blue" }]
+                grandPrizes: [{ name: "★ 絕版金槍神兵", img: "images/image_65.png", rarity: "rarity-gold" }],
+                redPrizes: [{ name: "M4A1-S | Orchids", img: "images/image_79.png", rarity: "rarity-red" }],
+                pinkPrizes: [{ name: "AWP | Railgun", img: "images/image_72.png", rarity: "rarity-pink" }],
+                purplePrizes: [{ name: "SSG 08 | Mindpill", img: "images/image_70.png", rarity: "rarity-purple" }],
+                bluePrizes: [{ name: "SSG 08 | Onyx", img: "images/image_74.png", rarity: "rarity-blue" }]
             },
             karambits: {
                 title: "😈 惡魔爪子刀機台", cost: 40, pityLimit: 3000,
-                grandPrizes: [{ name: "★ 終極夢幻收藏", img: "盲盒網頁/images/image (65).png", rarity: "rarity-gold" }],
-                redPrizes: [{ name: "AK-47 | Luminax", img: "盲盒網頁/images/image (84).png", rarity: "rarity-red" }],
-                pinkPrizes: [{ name: "M4A1-S | Retro", img: "盲盒網頁/images/image (77).png", rarity: "rarity-pink" }],
-                purplePrizes: [{ name: "P90 | Chromatic", img: "盲盒網頁/images/image (71).png", rarity: "rarity-purple" }],
-                bluePrizes: [{ name: "FAMAS | Mind", img: "盲盒網頁/images/image (83).png", rarity: "rarity-blue" }]
+                grandPrizes: [{ name: "★ 終極夢幻收藏", img: "images/image_65.png", rarity: "rarity-gold" }],
+                redPrizes: [{ name: "AK-47 | Luminax", img: "images/image_84.png", rarity: "rarity-red" }],
+                pinkPrizes: [{ name: "M4A1-S | Retro", img: "images/image_77.png", rarity: "rarity-pink" }],
+                purplePrizes: [{ name: "P90 | Chromatic", img: "images/image_71.png", rarity: "rarity-purple" }],
+                bluePrizes: [{ name: "FAMAS | Mind", img: "images/image_83.png", rarity: "rarity-blue" }]
             }
         };
 
@@ -936,7 +935,7 @@
 
         function withdrawItem(index) {
             const item = inventory[index];
-            alert(`💬 【提取道具申請成功】\n\n已登記！請複製您抽中的道具：\n「${item.name}」\n\n前往【閒魚聯絡客服】，發送名稱與您的遊戲交易ID，我們會在12小時內手動發送報價！\n\n*注意：此道具一經提取、恕不設回收。*`);
+            alert(`💬 【提取道具申請成功】\n\n已登記！請復制您抽中的道具：\n「${item.name}」\n\n前往【閒魚聯絡客服】，發送名稱與您的遊戲交易ID，我們會在12小時內手動發送報價！\n\n*注意：此道具一經提取、恕不設回收。*`);
         }
 
         function showFullscreenReward(skins) {
